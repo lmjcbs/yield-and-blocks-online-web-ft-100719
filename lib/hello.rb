@@ -1,7 +1,10 @@
 def hello_t(array)
-  array.map do |name|
-    yield(name)
-  end
+  if block_given?
+    array.map do |name|
+      yield ? yield(name) : "N"
+    end
+    return array
+
   array
 end
 
