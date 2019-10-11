@@ -1,7 +1,7 @@
 def hello_t(array)
   if block_given?
     array.map do |name|
-      yield ? yield(name) : "N"
+      yield(name)
     end
     return array
   else "Hey, no block was given!"
