@@ -1,5 +1,5 @@
 def hello_t(array)
-  array.each do |name|
+  array.map do |name|
     yield(name)
   end
   array
