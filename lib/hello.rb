@@ -1,6 +1,6 @@
 def hello_t(array)
   array.map do |name|
-    yield
+    yield(name)
   end
   array
 end
