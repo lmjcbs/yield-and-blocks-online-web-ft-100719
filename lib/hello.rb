@@ -4,7 +4,7 @@ def hello_t(array)
       yield(name)
     end
     return array
-  else "Hey, no block was given!"
+  else "Hey! No block was given!"
 end
 
 # call your method here!
